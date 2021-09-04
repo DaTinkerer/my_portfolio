@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background: #676c9e;
+}
+
+.top-div {
+  background: #fff;
+  padding: 1em;
+}
+
+.top-div .logo {
+  color: #676c9e;
+  margin-left: 10em;
+}
+
+.projects-section .section-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 36px;
+}
+
+.projects-section .project-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-section .project-content .project-text {
+  margin-left: 16em;
+  margin-right: 20em;
+  color: #fff;
+}
+
+.projects-section .project-content .project-text .project-description {
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 864px;
+}
+
+.projects-section .project-content .visit-div {
+  background: #fff;
+  text-align: center;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  padding: 10em;
+}
+
+/*# sourceMappingURL=../css/style.css.map */
