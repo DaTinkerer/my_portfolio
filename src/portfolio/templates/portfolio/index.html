@@ -13,22 +13,14 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="top-div"><h2 class="logo">BP</h2></div>
+    <div class="top-div">
+      <h2 class="logo">BP</h2>
+      <div></div>
+    </div>
 
     <section class="projects-section">
       <h1 class="section-title">Projects</h1>
       <div class="project-content">
-        <div class="project-text">
-          <h3 class="project-sub-heading">Budget Book</h3>
-          <p class="project-description">
-            This app helps keep track of spending habits. It uses a Vue SPA
-            format on the front end and Django Rest Framework api on the back
-            end. It has basic CRUD functionality and also comes with
-            authentication endpoints with the help of Dj Rest Auth. All data is
-            stored in a PostgreSQL database.
-          </p>
-        </div>
-
         <div class="visit-div">
           <p>budgetbook</p>
           <a href="" class="site-link">Visit Site</a>
@@ -37,7 +29,7 @@
     </section>
 
     <section class="skills-section">
-      <div class="front-end-skills">
+      <div id="frontend-skills" class="skills-div">
         <h3 class="skills-sub-heading">Front End</h3>
 
         <ul class="skills-list">
@@ -52,7 +44,7 @@
 
       <h1 class="section-title">My Skills</h1>
 
-      <div class="back-end-skills">
+      <div id="backend-skills" class="skills-div">
         <h3 class="skills-sub-heading">Back End</h3>
 
         <ul class="skills-list">
@@ -82,7 +74,7 @@
 
     <section class="contact-section">
       <h1 class="section-title">Contact</h1>
-
+    
       <form action="" class="contact-form">
         {% csrf_token %} {{ form.non_field_errors }}
         <div class="fieldWrapper">
@@ -104,8 +96,11 @@
           {{ form.msg }}
         </div>
 
-        <input type="submit" name="submit" />
+        <input id="submit" type="submit" name="submit" value="Send" />
       </form>
+    
     </section>
+
+    <section class="footer"></section>
   </body>
 </html>

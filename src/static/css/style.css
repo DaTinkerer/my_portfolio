@@ -8,6 +8,8 @@ body {
 
 .top-div {
   background: #fff;
+  display: flex;
+  justify-content: space-between;
   padding: 1em;
 }
 
@@ -19,33 +21,155 @@ body {
 .projects-section .section-title {
   color: #fff;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
   font-size: 36px;
 }
 
 .projects-section .project-content {
   display: flex;
-  justify-content: space-between;
-}
-
-.projects-section .project-content .project-text {
-  margin-left: 16em;
-  margin-right: 20em;
-  color: #fff;
-}
-
-.projects-section .project-content .project-text .project-description {
-  font-weight: 300;
-  font-size: 20px;
-  max-width: 864px;
+  justify-content: center;
 }
 
 .projects-section .project-content .visit-div {
   background: #fff;
   text-align: center;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  padding: 10em;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 1em;
+  padding: 2.5em;
+  margin-top: 2em;
+}
+
+.projects-section .project-content .visit-div p {
+  color: #1a9606;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projects-section .project-content .visit-div .site-link {
+  text-decoration: none;
+  color: #676c9e;
+  font-size: 20px;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-top: 20em;
+}
+
+.skills-section .section-title {
+  color: #676c9e;
+  font-size: 36px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.skills-section .skills-div {
+  background: white;
+  box-shadow: 0 2px 2px #dee1ff;
+  border-radius: 1em;
+  padding: 3em;
+  margin: auto;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+.skills-section .skills-div .skills-sub-heading {
+  color: #676c9e;
+}
+
+.skills-section .skills-div .skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-section .skills-div .skills-list li {
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.skills-section #frontend-skills {
+  padding-left: 5.73em;
+  padding-right: 5.73em;
+  padding-bottom: 5.73em;
+  margin-top: -7em;
+}
+
+.skills-section #backend-skills {
+  margin-top: -7em;
+}
+
+.about-section {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.about-section .light-title {
+  color: #fff;
+  font-size: 36px;
+}
+
+.about-section .about-description {
+  margin-top: 2em;
+  font-size: 22px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contact-section {
+  padding-top: 2em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6em;
+}
+
+.contact-section .section-title {
+  color: #676c9e;
+  font-size: 36px;
+  margin-bottom: 2em;
+}
+
+.contact-section .fieldWrapper {
+  margin-bottom: 2em;
+}
+
+.contact-section .fieldWrapper label {
+  display: block;
+  font-weight: 300;
+}
+
+.contact-section .fieldWrapper .input {
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  border-radius: .5em;
+  box-sizing: border-box;
+  border: #dee1ff 2px solid;
+}
+
+.contact-section .fieldWrapper #id_name, .contact-section .fieldWrapper #id_email {
+  height: 50px;
+}
+
+.contact-section #submit {
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 3em;
+  background: #676c9e;
+  color: #fff;
+  border-radius: .4em;
+  border-style: none;
+  border-color: #676c9e;
+}
+
+.contact-section #submit:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=../css/style.css.map */
