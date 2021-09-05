@@ -154,9 +154,11 @@ body {
 
 .contact-section .fieldWrapper #id_name, .contact-section .fieldWrapper #id_email {
   height: 50px;
+  width: 417px;
 }
 
 .contact-section #submit {
+  width: 417px;
   padding: 20px;
   padding-left: 25px;
   padding-right: 25px;
