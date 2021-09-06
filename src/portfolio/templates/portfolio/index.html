@@ -5,25 +5,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
       href="{% static 'css/style.css' %}"
     />
-    <title>Document</title>
+    <title>Bryant Peterson</title>
   </head>
   <body>
-    <div class="top-div">
+    <section class="top-div">
+    
       <h2 class="logo">BP</h2>
-      <div></div>
-    </div>
+      
+    
+    </section>
 
     <section class="projects-section">
       <h1 class="section-title">Projects</h1>
       <div class="project-content">
         <div class="visit-div">
-          <p>budgetbook</p>
-          <a href="" class="site-link">Visit Site</a>
+          <h3>budgetbook</h3>
+          <p class="description">
+            Simple, light weight tool for tracking your purchases.
+          </p>
+          <a href="https://budgetbook.live/" target="_blank" class="link">Visit Site</a>
+          <br>
+          <a href="https://github.com/n00bkoder/finance-journal" target="_blank" class="link">Source Code</a>
         </div>
       </div>
     </section>
@@ -55,27 +63,10 @@
         </ul>
       </div>
     </section>
-
-    <section class="about-section">
-      <h1 class="light-title">About</h1>
-      <p class="about-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Elementum nibh
-        tellus molestie nunc non blandit. Nulla pellentesque dignissim enim sit.
-        Tortor id aliquet lectus proin. Nulla facilisi nullam vehicula ipsum a
-        arcu. Mi proin sed libero enim sed. Odio ut sem nulla pharetra. Faucibus
-        purus in massa tempor nec feugiat nisl pretium. Interdum posuere lorem
-        ipsum dolor sit amet consectetur. Ultrices mi tempus imperdiet nulla
-        malesuada pellentesque elit. Ut enim blandit volutpat maecenas volutpat
-        blandit aliquam. Sit amet dictum sit amet. Hac habitasse platea dictumst
-        quisque sagittis.
-      </p>
-    </section>
-
     <section class="contact-section">
       <h1 class="section-title">Contact</h1>
-    
-      <form action="" class="contact-form">
+
+      <form id="form" action="" class="contact-form">
         {% csrf_token %} {{ form.non_field_errors }}
         <div class="fieldWrapper">
           {{ form.name.errors }}
@@ -96,11 +87,13 @@
           {{ form.msg }}
         </div>
 
+        <p class="success"></p>
+
         <input id="submit" type="submit" name="submit" value="Send" />
       </form>
-    
     </section>
 
     <section class="footer"></section>
+    <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
   </body>
 </html>

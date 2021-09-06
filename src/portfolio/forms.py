@@ -11,5 +11,5 @@ class ContactForm (forms.Form):
         widget=forms.EmailInput(attrs={'class': 'input'}))
     msg = forms.CharField(
         label='Message', 
-        max_length=1000, 
+        max_length=2000, 
         widget=forms.Textarea(attrs={'class': 'input'}))

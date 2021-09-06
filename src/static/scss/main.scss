@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-$primary-color: #676c9e;
+$primary-color: #81B3FF;
 $font-family: "Lato", sans-serif;
 body {
   margin: 0;
   padding: 0;
   font-family: $font-family;
   background: $primary-color;
-  
 }
 
 .top-div {
   background: #fff;
-  display: flex;
-  justify-content: space-between;
 
   padding: 1em;
 
   .logo {
     color: $primary-color;
-    margin-left: 10em;
+    margin-left: 5em;
+
+    @media (max-width: 640px) {
+      margin-left: 1em;
+    }
   }
 }
 
@@ -34,6 +35,7 @@ body {
     justify-content: center;
     .visit-div {
       background: #fff;
+
       text-align: center;
       width: 200px;
       min-width: 200px;
@@ -41,15 +43,24 @@ body {
       padding: 2.5em;
       margin-top: 2em;
 
-      p {
-        color: #1a9606;
+      h3 {
+        color: #afe7a1;
         font-weight: 700;
         font-size: 36px;
+        margin-top: -0.3em;
       }
-      .site-link {
+
+      .description {
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .link {
+        display: block;
         text-decoration: none;
         color: $primary-color;
-        font-size: 20px;
+        font-size: 15px;
+        margin-bottom: 0.1em;
+        font-weight: 700;
       }
     }
   }
@@ -60,16 +71,23 @@ body {
   justify-content: space-between;
   background: #fff;
   margin-top: 20em;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
   .section-title {
     color: $primary-color;
     font-size: 36px;
     margin-top: 2em;
     text-align: center;
+
+    @media (max-width: 750px) {
+      display: none;
+    }
   }
 
   .skills-div {
     background: white;
-    box-shadow: 0 2px 2px #dee1ff;
+    box-shadow: 0 2px 2px #cee1ff;
     border-radius: 1em;
     padding: 3em;
     margin: auto;
@@ -99,23 +117,11 @@ body {
 
   #backend-skills {
     margin-top: -7em;
-  }
-}
-
-.about-section {
-  margin-top: 4em;
-  margin-bottom: 2em;
-
-  text-align: center;
-  .light-title {
-    color: #fff;
-    font-size: 36px;
-  }
-  .about-description {
-    margin-top: 2em;
-    font-size: 22px;
-    font-weight: 300;
-    color: #fff;
+    padding: 3.159em;
+    @media (max-width: 600px) {
+      z-index: 99;
+      margin-top: -16em;
+    }
   }
 }
 
@@ -133,31 +139,32 @@ body {
   }
 
   .fieldWrapper {
-
     margin-bottom: 2em;
     label {
       display: block;
       font-weight: 300;
-      
     }
 
     .input {
       font-size: 15px;
       font-family: $font-family;
       padding: 20px;
-      border-radius: .5em;
+      border-radius: 0.5em;
       box-sizing: border-box;
       border: #dee1ff 2px solid;
+      @media (max-width: 465px) {
+        width: 300px;
+      }
     }
 
-    #id_name, #id_email {
+    #id_name,
+    #id_email {
       height: 50px;
       width: 417px;
-
+      @media (max-width: 465px) {
+        width: 300px;
+      }
     }
-
-    
-    
   }
   #submit {
     width: 417px;
@@ -167,14 +174,24 @@ body {
     margin-bottom: 3em;
     background: $primary-color;
     color: #fff;
-    border-radius: .4em;
+    border-radius: 0.4em;
     border-style: none;
     border-color: $primary-color;
     &:hover {
       cursor: pointer;
     }
-
+    &:active {
+      background: #404363;
+    }
+    @media (max-width: 465px) {
+      width: 300px;
+    }
   }
-  
-  
+
+  .success {
+    color: rgb(5, 126, 5);
+    font-weight: 300;
+    font-size: 20px;
+    display: none;
+  }
 }
