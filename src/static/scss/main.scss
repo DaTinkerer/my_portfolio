@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-$primary-color: #81B3FF;
+$primary-color: #81b3ff;
 $font-family: "Lato", sans-serif;
 body {
   margin: 0;
@@ -113,14 +113,22 @@ body {
     padding-bottom: 5.73em;
 
     margin-top: -7em;
+    @media (max-width: 600px){
+      border-bottom-left-radius: 0em;
+      border-bottom-right-radius: 0em;
+    }
+   
   }
 
   #backend-skills {
     margin-top: -7em;
-    padding: 3.159em;
+    padding: 3.156em;
     @media (max-width: 600px) {
       z-index: 99;
-      margin-top: -16em;
+      margin-top: -13em;
+      border-top-left-radius: 0em;
+      border-top-right-radius: 0em;
+      border-top: solid .1px #e7f0ff;
     }
   }
 }
@@ -131,7 +139,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
   .section-title {
     color: $primary-color;
     font-size: 36px;
@@ -151,19 +159,20 @@ body {
       padding: 20px;
       border-radius: 0.5em;
       box-sizing: border-box;
-      border: #dee1ff 2px solid;
+      border: #cee1ff 2px solid;
+      width: 417px;
       @media (max-width: 465px) {
         width: 300px;
       }
+      @media (orientation: landscape) {
+        width: 417px;
+      }
+      
     }
 
     #id_name,
     #id_email {
       height: 50px;
-      width: 417px;
-      @media (max-width: 465px) {
-        width: 300px;
-      }
     }
   }
   #submit {
@@ -181,7 +190,7 @@ body {
       cursor: pointer;
     }
     &:active {
-      background: #404363;
+      background: #638bc7;
     }
     @media (max-width: 465px) {
       width: 300px;
@@ -193,5 +202,16 @@ body {
     font-weight: 300;
     font-size: 20px;
     display: none;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  a {
+    display: block;
+    text-decoration: none;
   }
 }

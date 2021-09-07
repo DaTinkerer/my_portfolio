@@ -1,6 +1,7 @@
 asgiref==3.4.1
 astroid==2.7.3
 Django==3.2.7
+django-cors-headers==3.8.0
 django-sass==1.1.0
 isort==5.9.3
 lazy-object-proxy==1.6.0

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background: #81B3FF;
+  background: #81b3ff;
 }
 
 .top-div {
@@ -12,7 +12,7 @@ body {
 }
 
 .top-div .logo {
-  color: #81B3FF;
+  color: #81b3ff;
   margin-left: 5em;
 }
 
@@ -59,7 +59,7 @@ body {
 .projects-section .project-content .visit-div .link {
   display: block;
   text-decoration: none;
-  color: #81B3FF;
+  color: #81b3ff;
   font-size: 15px;
   margin-bottom: 0.1em;
   font-weight: 700;
@@ -79,7 +79,7 @@ body {
 }
 
 .skills-section .section-title {
-  color: #81B3FF;
+  color: #81b3ff;
   font-size: 36px;
   margin-top: 2em;
   text-align: center;
@@ -102,7 +102,7 @@ body {
 }
 
 .skills-section .skills-div .skills-sub-heading {
-  color: #81B3FF;
+  color: #81b3ff;
 }
 
 .skills-section .skills-div .skills-list {
@@ -122,15 +122,25 @@ body {
   margin-top: -7em;
 }
 
+@media (max-width: 600px) {
+  .skills-section #frontend-skills {
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+  }
+}
+
 .skills-section #backend-skills {
   margin-top: -7em;
-  padding: 3.159em;
+  padding: 3.156em;
 }
 
 @media (max-width: 600px) {
   .skills-section #backend-skills {
     z-index: 99;
-    margin-top: -16em;
+    margin-top: -13em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+    border-top: solid .1px #e7f0ff;
   }
 }
 
@@ -140,11 +150,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 
 .contact-section .section-title {
-  color: #81B3FF;
+  color: #81b3ff;
   font-size: 36px;
   margin-bottom: 2em;
 }
@@ -164,7 +174,8 @@ body {
   padding: 20px;
   border-radius: 0.5em;
   box-sizing: border-box;
-  border: #dee1ff 2px solid;
+  border: #cee1ff 2px solid;
+  width: 417px;
 }
 
 @media (max-width: 465px) {
@@ -173,17 +184,15 @@ body {
   }
 }
 
+@media (orientation: landscape) {
+  .contact-section .fieldWrapper .input {
+    width: 417px;
+  }
+}
+
 .contact-section .fieldWrapper #id_name,
 .contact-section .fieldWrapper #id_email {
   height: 50px;
-  width: 417px;
-}
-
-@media (max-width: 465px) {
-  .contact-section .fieldWrapper #id_name,
-.contact-section .fieldWrapper #id_email {
-    width: 300px;
-  }
 }
 
 .contact-section #submit {
@@ -192,11 +201,11 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 3em;
-  background: #81B3FF;
+  background: #81b3ff;
   color: #fff;
   border-radius: 0.4em;
   border-style: none;
-  border-color: #81B3FF;
+  border-color: #81b3ff;
 }
 
 .contact-section #submit:hover {
@@ -204,7 +213,7 @@ body {
 }
 
 .contact-section #submit:active {
-  background: #404363;
+  background: #638bc7;
 }
 
 @media (max-width: 465px) {
@@ -218,6 +227,17 @@ body {
   font-weight: 300;
   font-size: 20px;
   display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=../css/style.css.map */

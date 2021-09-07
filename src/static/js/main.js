@@ -1,3 +1,4 @@
+const form = document.getElementById("form");
 let sendMessage = (event) => {
   event.preventDefault();
   let name = document.querySelector("#id_name").value;
@@ -15,6 +16,7 @@ let sendMessage = (event) => {
     .then((response) => {
       successMsg.innerHTML = response.data['success'];
       successMsg.style.display = "block";
+      form.reset()
 
       console.log(response.data["success"]);
     })
@@ -26,6 +28,6 @@ let sendMessage = (event) => {
     .catch((err) => {
       console.log(err);
     });
+    
 };
-const form = document.getElementById("form");
 form.addEventListener("submit", sendMessage, true);

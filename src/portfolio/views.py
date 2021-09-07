@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 from django.http import JsonResponse
 from .forms import ContactForm
 import json

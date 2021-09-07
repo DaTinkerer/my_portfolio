@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background: #81b3ff;
+}
+
+.top-div {
+  background: #fff;
+  padding: 1em;
+}
+
+.top-div .logo {
+  color: #81b3ff;
+  margin-left: 5em;
+}
+
+@media (max-width: 640px) {
+  .top-div .logo {
+    margin-left: 1em;
+  }
+}
+
+.projects-section .section-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 36px;
+}
+
+.projects-section .project-content {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-section .project-content .visit-div {
+  background: #fff;
+  text-align: center;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 1em;
+  padding: 2.5em;
+  margin-top: 2em;
+}
+
+.projects-section .project-content .visit-div h3 {
+  color: #afe7a1;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: -0.3em;
+}
+
+.projects-section .project-content .visit-div .description {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.projects-section .project-content .visit-div .link {
+  display: block;
+  text-decoration: none;
+  color: #81b3ff;
+  font-size: 15px;
+  margin-bottom: 0.1em;
+  font-weight: 700;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-top: 20em;
+}
+
+@media (max-width: 600px) {
+  .skills-section {
+    flex-direction: column;
+  }
+}
+
+.skills-section .section-title {
+  color: #81b3ff;
+  font-size: 36px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .skills-section .section-title {
+    display: none;
+  }
+}
+
+.skills-section .skills-div {
+  background: white;
+  box-shadow: 0 2px 2px #cee1ff;
+  border-radius: 1em;
+  padding: 3em;
+  margin: auto;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+.skills-section .skills-div .skills-sub-heading {
+  color: #81b3ff;
+}
+
+.skills-section .skills-div .skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-section .skills-div .skills-list li {
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.skills-section #frontend-skills {
+  padding-left: 5.73em;
+  padding-right: 5.73em;
+  padding-bottom: 5.73em;
+  margin-top: -7em;
+}
+
+.skills-section #backend-skills {
+  margin-top: -7em;
+  padding: 3.159em;
+}
+
+@media (max-width: 600px) {
+  .skills-section #backend-skills {
+    z-index: 99;
+    margin-top: -16em;
+  }
+}
+
+.contact-section {
+  padding-top: 2em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.contact-section .section-title {
+  color: #81b3ff;
+  font-size: 36px;
+  margin-bottom: 2em;
+}
+
+.contact-section .fieldWrapper {
+  margin-bottom: 2em;
+}
+
+.contact-section .fieldWrapper label {
+  display: block;
+  font-weight: 300;
+}
+
+.contact-section .fieldWrapper .input {
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  border: #cee1ff 2px solid;
+}
+
+@media (max-width: 465px) {
+  .contact-section .fieldWrapper .input {
+    width: 300px;
+  }
+}
+
+.contact-section .fieldWrapper #id_name,
+.contact-section .fieldWrapper #id_email {
+  height: 50px;
+  width: 417px;
+}
+
+@media (max-width: 465px) {
+  .contact-section .fieldWrapper #id_name,
+.contact-section .fieldWrapper #id_email {
+    width: 300px;
+  }
+}
+
+.contact-section #submit {
+  width: 417px;
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 3em;
+  background: #81b3ff;
+  color: #fff;
+  border-radius: 0.4em;
+  border-style: none;
+  border-color: #81b3ff;
+}
+
+.contact-section #submit:hover {
+  cursor: pointer;
+}
+
+.contact-section #submit:active {
+  background: #404363;
+}
+
+@media (max-width: 465px) {
+  .contact-section #submit {
+    width: 300px;
+  }
+}
+
+.contact-section .success {
+  color: #057e05;
+  font-weight: 300;
+  font-size: 20px;
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../css/style.css.map */
