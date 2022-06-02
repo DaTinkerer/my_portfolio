@@ -1,1 +1,5 @@
-.env
+/src/.env
+/env
+/portfolio/migrations/__pycache__
+/portfolio/__pycache__
+/dj_portfolio/__pycache__

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+const form = document.getElementById("form");
+>>>>>>> 4b16179 (fixed styling)
 let sendMessage = (event) => {
   event.preventDefault();
   let name = document.querySelector("#id_name").value;
@@ -15,6 +19,10 @@ let sendMessage = (event) => {
     .then((response) => {
       successMsg.innerHTML = response.data['success'];
       successMsg.style.display = "block";
+<<<<<<< HEAD
+=======
+      form.reset()
+>>>>>>> 4b16179 (fixed styling)
 
       console.log(response.data["success"]);
     })
@@ -26,6 +34,11 @@ let sendMessage = (event) => {
     .catch((err) => {
       console.log(err);
     });
+<<<<<<< HEAD
 };
 const form = document.getElementById("form");
+=======
+    
+};
+>>>>>>> 4b16179 (fixed styling)
 form.addEventListener("submit", sendMessage, true);

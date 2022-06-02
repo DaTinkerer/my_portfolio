@@ -3,7 +3,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
+<<<<<<< HEAD
   background: #81b3ff;
+=======
+  background: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 .top-div {
@@ -12,7 +16,11 @@ body {
 }
 
 .top-div .logo {
+<<<<<<< HEAD
   color: #81b3ff;
+=======
+  color: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
   margin-left: 5em;
 }
 
@@ -22,13 +30,18 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .projects-section .section-title {
+=======
+.section-title {
+>>>>>>> 4b16179 (fixed styling)
   color: #fff;
   text-align: center;
   margin-top: 2em;
   font-size: 36px;
 }
 
+<<<<<<< HEAD
 .projects-section .project-content {
   display: flex;
   justify-content: center;
@@ -40,10 +53,46 @@ body {
   width: 200px;
   min-width: 200px;
   border-radius: 1em;
+=======
+.projects-section {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+
+@media (min-width: 700px) {
+  .projects-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 4rem;
+}
+
+.project-container .project-content {
+  background: #fff;
+  box-shadow: 1px 4px 6px -2px #000000;
+  text-align: center;
+  max-width: 200px;
+  border-radius: 0.6em;
+>>>>>>> 4b16179 (fixed styling)
   padding: 2.5em;
   margin-top: 2em;
 }
 
+<<<<<<< HEAD
 .projects-section .project-content .visit-div h3 {
   color: #afe7a1;
   font-weight: 700;
@@ -52,24 +101,56 @@ body {
 }
 
 .projects-section .project-content .visit-div .description {
+=======
+.project-container .project-content h3 {
+  color: #464c8c;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: -0.3em;
+}
+
+.project-container .project-content .description {
+>>>>>>> 4b16179 (fixed styling)
   font-weight: 300;
   font-size: 18px;
 }
 
+<<<<<<< HEAD
 .projects-section .project-content .visit-div .link {
   display: block;
   text-decoration: none;
   color: #81b3ff;
+=======
+.project-container .project-content .link {
+  display: block;
+  text-decoration: none;
+  color: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
   font-size: 15px;
   margin-bottom: 0.1em;
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 .skills-section {
   display: flex;
   justify-content: space-between;
   background: #fff;
   margin-top: 20em;
+=======
+.skills-cont {
+  width: 100%;
+  background-color: #fff;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 @media (max-width: 600px) {
@@ -79,7 +160,11 @@ body {
 }
 
 .skills-section .section-title {
+<<<<<<< HEAD
   color: #81b3ff;
+=======
+  color: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
   font-size: 36px;
   margin-top: 2em;
   text-align: center;
@@ -94,7 +179,11 @@ body {
 .skills-section .skills-div {
   background: white;
   box-shadow: 0 2px 2px #cee1ff;
+<<<<<<< HEAD
   border-radius: 1em;
+=======
+  border-radius: 0.6em;
+>>>>>>> 4b16179 (fixed styling)
   padding: 3em;
   margin: auto;
   margin-bottom: 10em;
@@ -102,7 +191,11 @@ body {
 }
 
 .skills-section .skills-div .skills-sub-heading {
+<<<<<<< HEAD
   color: #81b3ff;
+=======
+  color: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 .skills-section .skills-div .skills-list {
@@ -122,15 +215,35 @@ body {
   margin-top: -7em;
 }
 
+<<<<<<< HEAD
 .skills-section #backend-skills {
   margin-top: -7em;
   padding: 3.159em;
+=======
+@media (max-width: 600px) {
+  .skills-section #frontend-skills {
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+  }
+}
+
+.skills-section #backend-skills {
+  margin-top: -7em;
+  padding: 3.156em;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 @media (max-width: 600px) {
   .skills-section #backend-skills {
     z-index: 99;
+<<<<<<< HEAD
     margin-top: -16em;
+=======
+    margin-top: -13em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+    border-top: solid 0.1px #e7f0ff;
+>>>>>>> 4b16179 (fixed styling)
   }
 }
 
@@ -144,7 +257,11 @@ body {
 }
 
 .contact-section .section-title {
+<<<<<<< HEAD
   color: #81b3ff;
+=======
+  color: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
   font-size: 36px;
   margin-bottom: 2em;
 }
@@ -164,7 +281,17 @@ body {
   padding: 20px;
   border-radius: 0.5em;
   box-sizing: border-box;
+<<<<<<< HEAD
   border: #cee1ff 2px solid;
+=======
+  border: #a3abff 2px solid;
+  width: 417px;
+}
+
+.contact-section .fieldWrapper .input:focus {
+  outline: none;
+  background-color: #f2f3ff;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 @media (max-width: 465px) {
@@ -173,6 +300,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .contact-section .fieldWrapper #id_name,
 .contact-section .fieldWrapper #id_email {
   height: 50px;
@@ -184,6 +312,17 @@ body {
 .contact-section .fieldWrapper #id_email {
     width: 300px;
   }
+=======
+@media (orientation: landscape) {
+  .contact-section .fieldWrapper .input {
+    width: 417px;
+  }
+}
+
+.contact-section .fieldWrapper #id_name,
+.contact-section .fieldWrapper #id_email {
+  height: 50px;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 .contact-section #submit {
@@ -192,19 +331,31 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 3em;
+<<<<<<< HEAD
   background: #81b3ff;
   color: #fff;
   border-radius: 0.4em;
   border-style: none;
   border-color: #81b3ff;
+=======
+  background: #464c8c;
+  color: #fff;
+  border-radius: 0.4em;
+  border-style: none;
+  border-color: #464c8c;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 .contact-section #submit:hover {
   cursor: pointer;
+<<<<<<< HEAD
 }
 
 .contact-section #submit:active {
   background: #404363;
+=======
+  background: #2d325c;
+>>>>>>> 4b16179 (fixed styling)
 }
 
 @media (max-width: 465px) {
@@ -230,5 +381,8 @@ body {
   display: block;
   text-decoration: none;
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=../css/style.css.map */
+=======
+>>>>>>> 4b16179 (fixed styling)
