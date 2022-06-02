@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background: #81b3ff;
+  background: #464c8c;
 }
 
 .top-div {
@@ -12,7 +12,7 @@ body {
 }
 
 .top-div .logo {
-  color: #81b3ff;
+  color: #464c8c;
   margin-left: 5em;
 }
 
@@ -22,54 +22,83 @@ body {
   }
 }
 
-.projects-section .section-title {
+.section-title {
   color: #fff;
   text-align: center;
   margin-top: 2em;
   font-size: 36px;
 }
 
-.projects-section .project-content {
-  display: flex;
-  justify-content: center;
+.projects-section {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
 }
 
-.projects-section .project-content .visit-div {
-  background: #fff;
+@media (min-width: 700px) {
+  .projects-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.section-title {
+  color: #fff;
   text-align: center;
-  width: 200px;
-  min-width: 200px;
-  border-radius: 1em;
+  margin-top: 2em;
+  font-size: 4rem;
+}
+
+.project-container .project-content {
+  background: #fff;
+  box-shadow: 1px 4px 6px -2px #000000;
+  text-align: center;
+  max-width: 200px;
+  border-radius: 0.6em;
   padding: 2.5em;
   margin-top: 2em;
 }
 
-.projects-section .project-content .visit-div h3 {
-  color: #afe7a1;
+.project-container .project-content h3 {
+  color: #464c8c;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 1.4rem;
   margin-top: -0.3em;
 }
 
-.projects-section .project-content .visit-div .description {
+.project-container .project-content .description {
   font-weight: 300;
   font-size: 18px;
 }
 
-.projects-section .project-content .visit-div .link {
+.project-container .project-content .link {
   display: block;
   text-decoration: none;
-  color: #81b3ff;
+  color: #464c8c;
   font-size: 15px;
   margin-bottom: 0.1em;
   font-weight: 700;
 }
 
+.skills-cont {
+  width: 100%;
+  background-color: #fff;
+}
+
 .skills-section {
   display: flex;
   justify-content: space-between;
-  background: #fff;
   margin-top: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
 }
 
 @media (max-width: 600px) {
@@ -79,7 +108,7 @@ body {
 }
 
 .skills-section .section-title {
-  color: #81b3ff;
+  color: #464c8c;
   font-size: 36px;
   margin-top: 2em;
   text-align: center;
@@ -94,7 +123,7 @@ body {
 .skills-section .skills-div {
   background: white;
   box-shadow: 0 2px 2px #cee1ff;
-  border-radius: 1em;
+  border-radius: 0.6em;
   padding: 3em;
   margin: auto;
   margin-bottom: 10em;
@@ -102,7 +131,7 @@ body {
 }
 
 .skills-section .skills-div .skills-sub-heading {
-  color: #81b3ff;
+  color: #464c8c;
 }
 
 .skills-section .skills-div .skills-list {
@@ -129,22 +158,22 @@ body {
   }
 }
 
-.skills-section #backend-skills {
+.skills-section #frontend-skills #backend-skills {
   margin-top: -7em;
   padding: 3.156em;
 }
 
 @media (max-width: 600px) {
-  .skills-section #backend-skills {
+  .skills-section #frontend-skills #backend-skills {
     z-index: 99;
     margin-top: -13em;
     border-top-left-radius: 0em;
     border-top-right-radius: 0em;
-    border-top: solid .1px #e7f0ff;
+    border-top: solid 0.1px #e7f0ff;
   }
 }
 
-.contact-section {
+.skills-section .contact-section {
   padding-top: 2em;
   background: #fff;
   display: flex;
@@ -153,91 +182,91 @@ body {
   margin-bottom: 3em;
 }
 
-.contact-section .section-title {
-  color: #81b3ff;
+.skills-section .contact-section .section-title {
+  color: #464c8c;
   font-size: 36px;
   margin-bottom: 2em;
 }
 
-.contact-section .fieldWrapper {
+.skills-section .contact-section .fieldWrapper {
   margin-bottom: 2em;
 }
 
-.contact-section .fieldWrapper label {
+.skills-section .contact-section .fieldWrapper label {
   display: block;
   font-weight: 300;
 }
 
-.contact-section .fieldWrapper .input {
+.skills-section .contact-section .fieldWrapper .input {
   font-size: 15px;
   font-family: "Lato", sans-serif;
   padding: 20px;
   border-radius: 0.5em;
   box-sizing: border-box;
-  border: #cee1ff 2px solid;
+  border: #a3abff 2px solid;
   width: 417px;
 }
 
+.skills-section .contact-section .fieldWrapper .input:focus {
+  outline: none;
+  background-color: #F2F3FF;
+}
+
 @media (max-width: 465px) {
-  .contact-section .fieldWrapper .input {
+  .skills-section .contact-section .fieldWrapper .input {
     width: 300px;
   }
 }
 
 @media (orientation: landscape) {
-  .contact-section .fieldWrapper .input {
+  .skills-section .contact-section .fieldWrapper .input {
     width: 417px;
   }
 }
 
-.contact-section .fieldWrapper #id_name,
-.contact-section .fieldWrapper #id_email {
+.skills-section .contact-section .fieldWrapper #id_name,
+.skills-section .contact-section .fieldWrapper #id_email {
   height: 50px;
 }
 
-.contact-section #submit {
+.skills-section .contact-section #submit {
   width: 417px;
   padding: 20px;
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 3em;
-  background: #81b3ff;
+  background: #464c8c;
   color: #fff;
   border-radius: 0.4em;
   border-style: none;
-  border-color: #81b3ff;
+  border-color: #464c8c;
 }
 
-.contact-section #submit:hover {
+.skills-section .contact-section #submit:hover {
   cursor: pointer;
-}
-
-.contact-section #submit:active {
-  background: #638bc7;
+  background-color: #2d325c;
 }
 
 @media (max-width: 465px) {
-  .contact-section #submit {
+  .skills-section .contact-section #submit {
     width: 300px;
   }
 }
 
-.contact-section .success {
+.skills-section .contact-section .success {
   color: #057e05;
   font-weight: 300;
   font-size: 20px;
   display: none;
 }
 
-.footer {
+.skills-section .footer {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
 }
 
-.footer a {
+.skills-section .footer a {
   display: block;
   text-decoration: none;
 }
-
-/*# sourceMappingURL=../css/style.css.map */
